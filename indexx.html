@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moch Rizal Herdiansyah | Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- AOS JS -->
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+      <div class="container">
+        <a class="navbar-brand" href="#">Moch Rizal Herdiansyah</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header
+      class="hero text-center text-white d-flex align-items-center"
+      id="home"
+    >
+      <div class="container">
+        <div class="mb-4">
+          <img
+            src="assets/img/IMG_0337.JPG"
+            alt="Moch Rizal Herdiansyah"
+            class="rounded-circle shadow"
+            width="180"
+            height="180"
+          />
+        </div>
+        <h1 class="display-4 fw-bold">Hi, I'm Moch Rizal Herdiansyah</h1>
+        <p class="lead">A Passionate Web Developer & QA Engineer</p>
+        <div class="d-flex justify-content-center flex-wrap gap-3 mt-3">
+          <a href="#projects" class="btn btn-outline-light">See My Work</a>
+          <a
+            href="assets/doc/CV_Moch Rizal Herdiansyah.pdf"
+            class="btn btn-warning text-dark"
+            target="_blank"
+            >Download CV</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center" data-aos="zoom-in" data-aos-duration="1000">
+          <h2 class="fw-bold mb-4">About Me</h2>
+          <div class="mx-auto" style="max-width: 800px">
+            <p
+              class="lead text-muted"
+              style="font-size: 1.1rem; line-height: 1.8"
+            >
+              Bachelor of Computer Science from Mercu Buana Yogyakarta
+              University with expertise in web development, database management,
+              and application testing. Experienced in developing 3 web-based
+              systems, being a Practicum Assistant for 5 semesters and Quality
+              Assurance Engineer at Gamatechno Indonesia Yogyakarta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- projects -->
+    <section id="projects" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Projects</h2>
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100 border-0 shadow-sm">
+              <img
+                src="assets/img/projects1.png"
+                class="card-img-top"
+                alt="Naru Apps"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Naru Apps</h5>
+                <p class="card-text flex-grow-1">
+                  Web app for waste bank management with roles for users and
+                  admins.
+                </p>
+                <button
+                  class="btn btn-outline-primary mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalNaru"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Naru -->
+          <div
+            class="modal fade"
+            id="modalNaru"
+            tabindex="-1"
+            aria-labelledby="modalNaruLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalNaruLabel">
+                    Detail Project: Naru Apps
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Tutup"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="assets/img/projects1.png"
+                    class="img-fluid rounded mb-3"
+                    alt="Naru Apps"
+                  />
+                  <p>
+                    <strong>Deskripsi:</strong> Naru Apps adalah aplikasi web
+                    untuk manajemen bank sampah, memungkinkan pengguna dan admin
+                    untuk mencatat dan mengelola tabungan sampah daur ulang.
+                  </p>
+                  <p><strong>Fitur:</strong></p>
+                  <ul>
+                    <li>Login multi-role (user & admin)</li>
+                    <li>Pencatatan setoran dan penarikan</li>
+                    <li>Laporan transaksi & manajemen data</li>
+                  </ul>
+                  <p>
+                    <strong>Teknologi:</strong> HTML, CSS, JS, PHP, CodeIgniter
+                    3, MySQL
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100 border-0 shadow-sm">
+              <img
+                src="assets/img/projects2.png"
+                class="card-img-top"
+                alt="Java Hotel"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Java Hotel</h5>
+                <p class="card-text flex-grow-1">
+                  Backend system for hotel reservations and user management.
+                </p>
+                <button
+                  class="btn btn-outline-primary mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalHotel"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Java Hotel -->
+          <div
+            class="modal fade"
+            id="modalHotel"
+            tabindex="-1"
+            aria-labelledby="modalHotelLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalHotelLabel">
+                    Detail Project: Java Hotel
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Tutup"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="assets/img/projects2.png"
+                    class="img-fluid rounded mb-3"
+                    alt="Java Hotel"
+                  />
+                  <p>
+                    <strong>Deskripsi:</strong> Sistem backend untuk manajemen
+                    reservasi dan pengguna hotel secara online.
+                  </p>
+                  <p><strong>Fitur:</strong></p>
+                  <ul>
+                    <li>Autentikasi pengguna & role admin</li>
+                    <li>CRUD data kamar & pemesanan</li>
+                    <li>Integrasi REST API</li>
+                  </ul>
+                  <p>
+                    <strong>Teknologi:</strong> Node.js, ExpressJS, MySQL, REST
+                    API
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100 border-0 shadow-sm">
+              <img
+                src="assets/img/projects3.png"
+                class="card-img-top"
+                alt="Mercu Rank"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Mercu Rank</h5>
+                <p class="card-text flex-grow-1">
+                  Ranking system for top graduates using weighted criteria.
+                </p>
+                <button
+                  class="btn btn-outline-primary mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalRank"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Mercu Rank -->
+          <div
+            class="modal fade"
+            id="modalRank"
+            tabindex="-1"
+            aria-labelledby="modalRankLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalRankLabel">
+                    Detail Project: Mercu Rank
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Tutup"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="assets/img/projects3.png"
+                    class="img-fluid rounded mb-3"
+                    alt="Mercu Rank"
+                  />
+                  <p>
+                    <strong>Deskripsi:</strong> Sistem untuk menentukan
+                    peringkat lulusan terbaik dengan metode pembobotan dan
+                    kriteria tertentu.
+                  </p>
+                  <p><strong>Fitur:</strong></p>
+                  <ul>
+                    <li>Input data lulusan & nilai kriteria</li>
+                    <li>Perhitungan ranking otomatis</li>
+                    <li>Hasil ranking dalam tabel & grafik</li>
+                  </ul>
+                  <p>
+                    <strong>Teknologi:</strong> Bootstrap, CodeIgniter 4, MySQL
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center">Work Experience</h2>
+        <ul class="list-group mt-4 mb-4">
+          <li class="list-group-item">
+            <strong>Quality Assurance Engineer</strong> – PT. Gamatechno
+            Indonesia<br />
+            Tested 50+ user flows and provided evaluations for apps such as
+            Santri App (Bank Indonesia) and Board Meeting App (Bank BTN).
+          </li>
+          <li class="list-group-item">
+            <strong>Informatics Practicum Assistant</strong> – Mercu Buana
+            Yogyakarta<br />
+            Guided students in algorithm, database, and web programming for 5
+            semesters.
+          </li>
+        </ul>
+        <div class="text-center">
+          <p class="lead">
+            Beyond roles, I bring attention to detail, user-first thinking, and
+            a drive to continuously improve digital experiences.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Awards & Certifications</h2>
+        <div class="row g-4">
+          <!-- Card Certificate -->
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img
+                src="img/certificate1.jpg"
+                class="card-img-top"
+                alt="Certificate 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Web Programming Certificate</h5>
+                <p class="card-text">
+                  Recognized for excellence in creating dynamic and responsive
+                  web apps.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Another Certificate -->
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img
+                src="img/certificate2.jpg"
+                class="card-img-top"
+                alt="Certificate 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Database Programming</h5>
+                <p class="card-text">
+                  Certified in effective database schema design and optimization
+                  techniques.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Skills</h2>
+        <div class="row text-center">
+          <div class="col-md-3">
+            <div class="skill-box">
+              <i class="bi bi-code-slash fs-1 text-primary"></i>
+              <h5 class="mt-3">Web Development</h5>
+              <p>HTML, CSS, JS, PHP, CodeIgniter, ExpressJS</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="skill-box">
+              <i class="bi bi-database fs-1 text-success"></i>
+              <h5 class="mt-3">Database</h5>
+              <p>MySQL, ERD Design, Query Optimization</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="skill-box">
+              <i class="bi bi-bug-fill fs-1 text-danger"></i>
+              <h5 class="mt-3">Quality Assurance</h5>
+              <p>Manual Testing, Test Case Writing, Reporting</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="skill-box">
+              <i class="bi bi-git fs-1 text-warning"></i>
+              <h5 class="mt-3">Tools</h5>
+              <p>Git, Postman, Figma, XAMPP</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 text-white bg-dark">
+      <div class="container text-center">
+        <h2>Contact Me</h2>
+        <p>You can reach me via social media or send me an email.</p>
+        <div class="d-flex justify-content-center gap-4 fs-4 mb-3">
+          <a href="mailto:rizal@example.com" class="text-white" title="Email"
+            ><i class="bi bi-envelope-fill"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/username"
+            class="text-white"
+            target="_blank"
+            title="Instagram"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a
+            href="https://www.tiktok.com/@username"
+            class="text-white"
+            target="_blank"
+            title="TikTok"
+            ><i class="bi bi-tiktok"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/mochrizalherdiansyah"
+            class="text-white"
+            target="_blank"
+            title="LinkedIn"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
+        <a href="mailto:rizal@example.com" class="btn btn-outline-light"
+          >Email Me</a
+        >
+      </div>
+    </section>
+
+    <footer class="text-center py-4 bg-black text-white">
+      <small>&copy; 2025 Moch Rizal Herdiansyah. All rights reserved.</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
