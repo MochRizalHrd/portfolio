@@ -2,6 +2,15 @@ body {
   font-family: "Segoe UI", sans-serif;
 }
 
+.navbar {
+  background: linear-gradient(135deg, #1d3557, #457b9d, #a8dadc);
+}
+
+.nav-item a {
+  color: #fff;
+  font-weight: 500;
+}
+
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://source.unsplash.com/1600x900/?technology,code") center/cover
@@ -74,6 +83,77 @@ section h2 {
   font-size: 1.5rem;
 }
 
+#experience h2 {
+  font-weight: 700;
+  color: #343a40;
+}
+
+#experience h4 {
+  margin-top: 40px;
+  font-weight: 600;
+  border-left: 4px solid #0d6efd;
+  padding-left: 12px;
+}
+
+#experience .card {
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+#experience .card:hover {
+  transform: scale(1.02);
+}
+
+#experience .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+#experience .card-subtitle {
+  font-size: 0.95rem;
+}
+
+#experience .card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Accordion customization */
+.accordion-button {
+  background-color: #f8f9fa;
+  color: #212529;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.accordion-button:hover {
+  background-color: #e9ecef;
+  transform: translateX(5px);
+}
+
+.accordion-button::after {
+  transition: transform 0.3s ease;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
+}
+
+.accordion-body {
+  animation: fadeSlideIn 0.4s ease-in-out;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .project-card {
   transition: transform 0.2s ease;
 }
@@ -85,6 +165,17 @@ section h2 {
 .project-card button {
   color: #457b9d;
   border: 1px solid #457b9d;
+}
+
+.btn-selengkapnya {
+  font-weight: 500;
+}
+
+.btn-selengkapnya:hover {
+  background-color: #457b9d;
+  border-color: #457b9d;
+  color: #fff;
+  font-weight: 500;
 }
 
 #projects h2 {
